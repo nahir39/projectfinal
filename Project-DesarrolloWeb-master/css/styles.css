@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; color:#222; background:#f7f7f8}
+.site-header{padding:28px;text-align:center;background:white;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+.site-header h1{margin:0;font-size:28px}
+.lead{margin:6px 0 0;color:#666}
+.galeria{max-width:1100px;margin:30px auto;padding:0 16px}
+.contenedor-fotos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.foto{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06);cursor:pointer;transition:transform .12s}
+.foto:hover{transform:translateY(-6px)}
+.foto img{width:100%;height:170px;object-fit:cover;display:block}
+.foto .meta{padding:10px}
+.foto .meta h3{margin:0;font-size:16px}
+.foto .meta p{margin:6px 0 0;font-size:13px;color:#555}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);padding:20px;z-index:1000}
+.lightbox.hidden{display:none}
+.lightbox img{max-width:95%;max-height:80vh;border-radius:8px}
+.lb-close{position:absolute;right:18px;top:18px;background:transparent;border:0;color:white;font-size:26px;cursor:pointer}
+#lb-caption{color:white;margin-top:12px}
+@media (max-width:520px){
+  .foto img{height:140px}
+}
