@@ -6,9 +6,9 @@ Este proyecto es una aplicación web desarrollada en React, con base de datos en
 Antes de empezar, asegúrate de tener instalado:
 
 📥 Instalación y ejecución en local
-Clonar el repositorio
+Clonar el repositorio https://github.com/nahir39/projectfinal
 
-git clone https://github.com/Daniiel24w/Project-DesarrolloWeb
+git clone 
 Entrar a la carpeta del proyecto
 
 
